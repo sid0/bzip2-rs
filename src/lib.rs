@@ -55,6 +55,8 @@ extern crate libc;
 #[cfg(test)]
 extern crate rand;
 #[cfg(test)]
+extern crate partial_io;
+#[cfg(test)]
 extern crate quickcheck;
 #[cfg(feature = "tokio")]
 #[macro_use]
@@ -81,4 +83,3 @@ pub enum Compression {
     /// Choose the default compression, a balance between speed and size.
     Default = 6,
 }
-
